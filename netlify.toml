@@ -1,5 +1,6 @@
 [build]
-  command = "npm run build"
+  # Change the command to execute the new shell script
+  command = "bash build.sh"
   publish = "dist" 
   functions = "netlify/functions" 
 
