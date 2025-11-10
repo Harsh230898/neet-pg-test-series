@@ -3,10 +3,5 @@
   publish = "dist" 
   functions = "netlify/functions" 
 
-# This block ensures dependencies are handled correctly for the function
-[functions]
-  node_bundler = "esbuild"
-  external_node_modules = ["groq-sdk"]
-
 [context.production.environment]
   NODE_VERSION = "18"
