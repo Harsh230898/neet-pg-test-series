@@ -1,10 +1,21 @@
 {
-  "name": "netlify-functions",
-  "version": "1.0.0",
-  "description": "Dependencies for Netlify Serverless Functions",
-  "main": "ai-chat.js",
+  "name": "medvanshi",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "groq-sdk": "^0.10.0" 
-    // Ensure you use the current or latest version number for groq-sdk
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.368.0",
+    "firebase": "^10.11.0",
+    "groq-sdk": "^0.10.0"  <-- ENSURE THIS LINE IS PRESENT
+  },
+  "devDependencies": {
+    // ... (rest of dev dependencies)
   }
 }

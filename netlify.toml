@@ -1,11 +1,12 @@
 [build]
-  # Your standard build command
   command = "npm run build"
-  # Replace 'dist' with your actual build output folder (e.g., 'build' for Create React App)
   publish = "dist" 
-  # This tells Netlify to look for serverless functions in the netlify/functions folder
   functions = "netlify/functions" 
 
+# This block ensures dependencies are handled correctly for the function
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["groq-sdk"]
+
 [context.production.environment]
-  # Set the Node version for your serverless functions
   NODE_VERSION = "18"
